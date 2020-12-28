@@ -1,0 +1,72 @@
+/* Varriables */
+:root {
+  /* Colors */
+  --white: #fff;
+  --primary-white: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --primary-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
+
+/* Fonts */
+
+/* Neucha */
+@font-face {
+  font-family: 'Neucha';
+  src: url('../fonts/Neucha/Neucha-Regular.ttf');
+}
+
+/* Open Sans */
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  src: url('../fonts/Open_Sans/OpenSans-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-BoldItalic';
+  src: url('../fonts/Open_Sans/OpenSans-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-ExtraBoldItalic';
+  src: url('../fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-Italic';
+  src: url('../fonts/Open_Sans/OpenSans-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../fonts/Open_Sans/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-LightItalic';
+  src: url('../fonts/Open_Sans/OpenSans-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url('../fonts/Open_Sans/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-SemiBoldItalic';
+  src: url('../fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf');
+}
