@@ -12,6 +12,8 @@ on:
   push:
     branches:
       - '**'
+    tags:
+      - '**'
 
 jobs:
   build:
@@ -21,3 +23,4 @@ jobs:
 
       - name: Hexlet project check
         uses: hexlet/project-action@release
+        with: ${{ secrets.HEXLET_ID }}
