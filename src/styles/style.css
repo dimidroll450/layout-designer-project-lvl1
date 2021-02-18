@@ -17,7 +17,7 @@ body {
 h1,
 h2,
 h3,
-h4 {
+.h3 {
   margin: 0;
 
   font-family: 'Neucha', sans-serif;
@@ -32,12 +32,13 @@ h2 {
   font-size: 60px;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 34px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 14px;
 }
 
 section,
@@ -80,7 +81,7 @@ a {
 }
 
 .flex-container > .column {
-  width: 50%;
+  width: 49%;
 }
 
 .flex-center {
@@ -116,6 +117,26 @@ a {
   color: var(--main);
 }
 
+.section-divider {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px;
+
+  font-variant: small-caps;
+  line-height: 16.8px;
+
+  background-color: var(--brown);
+}
+
+.section-sub {
+  font-size: 24px;
+  font-family: "Neucha", sans-serif;
+}
+
 /* ----------------------------Columns--------------------------------- */
 .columns-2 {
   column-count: 2;
@@ -137,11 +158,28 @@ a {
 
 .background-light {
   position: relative;
+}
 
-  background-color: var(--primary-white);
+.background-light::before {
+  position: absolute;
+
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--light);
+}
+
+.background-brown {
+  z-index: -1;
+
+  background-color: var(--brown);
 }
 
 .background-dark {
+  position: relative;
+
   background-color: var(--main-dark);
 }
 
@@ -149,7 +187,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -2;
 
   width: 100%;
   height: 100%;
@@ -163,7 +201,7 @@ a {
 }
 
 /* -------------------------------Images-------------------------- */
-.img {
+img {
   max-width: 100%;
   height: auto;
 
@@ -193,7 +231,7 @@ a {
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--mait);
+  background-color: #ea7600;
 }
 
 /* -----------------------------Video--------------------------- */
@@ -203,7 +241,7 @@ a {
 
 /* -----------------------------Navigation------------------------ */
 .nav-item {
-  max-width: 350px;
+  width: 350px;
   height: 323px;
 
   margin: 1em;
@@ -223,11 +261,12 @@ a {
 
 .nav-link {
   display: inline-block;
-
   width: 100%;
   height: 100%;
 
   padding: 24px;
+
+  background-color: var(--primary-white);
 }
 
 .nav-link:hover {
@@ -246,4 +285,8 @@ a {
   font-size: 64px;
   font-family: "Neucha", sans-serif;
   line-height: 1;
+}
+
+.shadow {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
