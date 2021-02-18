@@ -9,7 +9,7 @@
 
 <body>
 
-  <header class="background-image position-relative">
+  <header class="background-image position-relative ov-hidden">
     <div class="container">
       <h1 class="header-title">
         <span class="text-yellow">
@@ -35,7 +35,7 @@
             Если мы сможем минимизировать воздействие одного или нескольких из этих
             факторов, то сможем сломать и цикл, а остатки нейтрализовать.
           </p>
-          <a href="#" class="btn text-white mt-5">ПОДРОБНЕЕ</a>
+          <a href="#navigation" class="btn text-white mt-5">ПОДРОБНЕЕ</a>
         </div>
       </div>
       
@@ -44,7 +44,7 @@
 
   <main class="main">
 
-    <section class="position-relative background-light">
+    <section class="position-relative mb-100">
       <div class="container flex-container flex-center">
         <h2>
           Что же это такое,<br>
@@ -55,9 +55,82 @@
           src="https://www.youtube.com/embed/jie9AizBqss"
           frameborder="0" allowfullscreen>
         </iframe>
-
       </div>
     </section>
+
+  
+    <section class="background-dark" id="navigation">
+      <div class="container">
+        <nav class="nav-list">
+          <ul class="flex-container">
+            <li class="nav-item">
+              <h2 class=" nav-header text-white">
+                <span class="text-yellow">5 когнитивых искажений</span>
+                о существовании которых стоит помнить
+              </h2>
+            </li>
+            <li class="nav-item background-light">
+              <a href="#" class="nav-link">
+                <p class="nav-number">1</p>
+                <h3 class="text-yellow">
+                  Эффект ИКЕА
+                </h3>
+                <p>
+                  Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.
+                </p>
+              </a>
+            </li>
+            <li class="nav-item background-light">
+              <a href="#" class="nav-link">
+                <p class="nav-number">2</p>
+                <h3 class="text-yellow">
+                  Преждевременная оптимизация
+                </h3>
+                <p>
+                  Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.
+                </p>
+              </a>
+            </li>
+            <li class="nav-item  background-light">
+              <a href="#" class="nav-link">
+                <p class="nav-number">3</p>
+                <h3 class="text-yellow">
+                  Искажение новизны
+                </h3>
+                <p>
+                  Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.
+                </p>
+              </a>
+            </li>
+            <li class="nav-item  background-light">
+              <a href="#" class="nav-link">
+                <p class="nav-number">4</p>
+                <h3 class="text-yellow">
+                  Гиперболическое обесценивание
+                </h3>
+                <p>
+                  Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную,
+                  недоступную сейчас, но доступную в будущем.
+                </p>
+              </a>
+            </li>
+            <li class="nav-item  background-light">
+              <a href="#" class="nav-link">
+                <p class="nav-number">5</p>
+                <h3 class="text-yellow">
+                  Ошибка планирования
+                </h3>
+                <p>
+                  Неправильно рассчитывать время необходимое для завершения задачи.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+
     <section>
       <div class="container">
         <img src="./images/1.png" alt="Эффект ИКЕА" class="img">
@@ -87,18 +160,23 @@
   </main>
 
   <footer class="footer">
-    <div>
-      <h3 class="h h3">Хотите узнать больше?<br>Подпишитесь на обновления</h3>
-      <form action="#" method="post">
-        <label class="form-lable" for="email">Электронная почта</label>
-        <input id="email" type="text" name="Ваша электронная почта">
-        <button class="send"></button> 
-      </form>
-    </div>
-    <div class="contacts">
-      <p>© 2020 Константин Константинопольский</p>
-      <p>По материалам статьи Yash Ranadive <a href="#">Biases in Programming</a></p>
-      <p><a href="#">Курсы программирования Hexlet</a></p>
+    <div class="container">
+      <div>
+        <h3>
+          Хотите узнать больше?<br>
+          Подпишитесь на обновления
+        </h3>
+        <form action="#" method="post">
+          <label class="form-lable" for="email">Электронная почта</label>
+          <input id="email" type="text" name="Ваша электронная почта">
+          <button class="send"></button> 
+        </form>
+      </div>
+      <div class="contacts">
+        <p>© 2020 Константин Константинопольский</p>
+        <p>По материалам статьи Yash Ranadive <a href="#">Biases in Programming</a></p>
+        <p><a href="#">Курсы программирования Hexlet</a></p>
+      </div>
     </div>
   </footer>
 </body>
