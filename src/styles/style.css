@@ -29,8 +29,8 @@ h1 {
 }
 
 h2 {
-  font-size: 60px;
   font-weight: normal;
+  font-size: 60px;
 }
 
 h3,
@@ -109,7 +109,9 @@ a {
 .order-2 {
   order: 2;
 }
+
 /* -----------------------------Text---------------------------- */
+
 .header-title {
   position: relative;
   z-index: 1;
@@ -210,13 +212,12 @@ a {
 
   background-color: var(--brown);
   background-size: cover;
-  
+
   content: "";
 }
 
 .background-dark {
   position: relative;
-
 
   background-color: var(--main-dark);
 }
@@ -275,6 +276,7 @@ img {
 /* -----------------------------Video--------------------------- */
 .video {
   max-width: 919px;
+
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
