@@ -312,9 +312,10 @@ img {
 
 /* -----------------------------Video--------------------------- */
 .video {
+  z-index: 1;
+
   max-width: 919px;
   padding: 0;
-  z-index: 1111;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
@@ -378,12 +379,13 @@ img {
 }
 
 .contacts a {
-  text-decoration: underline;
   color: var(--blue);
+  text-decoration: underline;
 }
 
 .agreement {
   padding: 0;
+
   font-size: 12px;
 }
 
