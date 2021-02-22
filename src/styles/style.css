@@ -67,8 +67,24 @@ a {
   position: absolute;
 }
 
-.mb-100 {
-  margin-bottom: -100px;
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pb-200 {
+  padding-top: 200px;
+}
+
+.mt-5 {
+  margin-top: 5%;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-minus-100px {
+  margin-top: -100px;
 }
 
 /* ----------------------------Flex-------------------------- */
@@ -91,15 +107,13 @@ a {
   justify-content: center;
 }
 
-.flex-center * {
+.flex-center * { /* костыль */
   width: 100%;
   padding: 1rem;
-
-  text-align: center;
 }
 
-.mt-5 {
-  margin-top: 5%;
+.nowrap {
+  flex-wrap: nowrap;
 }
 
 .order-1 {
@@ -149,11 +163,12 @@ a {
   font-family: "Neucha", sans-serif;
 }
 
-/* ----------------------------Columns--------------------------------- */
-.columns-2 {
-  column-count: 2;
-  column-gap: 30px;
-  break-inside: avoid;
+.ta-center {
+  text-align: center;
+}
+
+.ta-left {
+  text-align: left;
 }
 
 /* -----------------------------Visibility-------------------------- */
@@ -247,9 +262,9 @@ img {
   vertical-align: middle;
 }
 
-.img-right {
+.img-header {
   position: absolute;
-  top: 55px;
+  top: -55px;
   right: -270px;
 
   height: 525px;
@@ -273,9 +288,33 @@ img {
   background-color: #ea7600;
 }
 
+.btn-send {
+  position: relative;
+
+  width: 70px;
+  height: 50px;
+}
+
+.btn-send::before {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url(../images/send.svg);
+  transform: translate(-50%, -50%);
+
+  content: '';
+}
+
 /* -----------------------------Video--------------------------- */
 .video {
   max-width: 919px;
+  padding: 0;
+  z-index: 1111;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
@@ -332,4 +371,23 @@ img {
 
 .shadow {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.contacts {
+  font-size: 14px;
+}
+
+.contacts a {
+  text-decoration: underline;
+  color: var(--blue);
+}
+
+.agreement {
+  padding: 0;
+  font-size: 12px;
+}
+
+input[id="email"] {
+  height: 50px;
+  padding: 15px;
 }
