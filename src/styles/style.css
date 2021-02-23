@@ -95,8 +95,12 @@ a {
   margin-top: 5%;
 }
 
-.mt-60 {
-  margin-top: 60px;
+.mt-88 {
+  margin-top: 88px;
+}
+
+.mt-0 {
+  margin-top: 0;
 }
 
 .mb-0 {
@@ -393,7 +397,7 @@ img {
   width: 350px;
   height: 340px;
 
-  margin: 0.8em;
+  margin: 0.7em;
 
   overflow: hidden;
 
@@ -409,6 +413,7 @@ img {
 }
 
 .nav-list > ul {
+  list-style: none;
   padding: 0;
 }
 
@@ -465,6 +470,14 @@ input[id="email"] {
   padding: 15px;
 
   border: none;
+}
+
+.label-form {
+  display: block;
+
+  padding-bottom: 0.7em;
+
+  font-size: 18px;
 }
 
 /* ------------------------- Mobile ------------------------ */
