@@ -395,9 +395,9 @@ img {
 /* -----------------------------Navigation------------------------ */
 .nav-item {
   width: 350px;
-  height: 340px;
+  height: 338px;
 
-  margin: 0.7em;
+  margin: 0.6em 0.83em;
 
   overflow: hidden;
 
@@ -412,8 +412,15 @@ img {
   width: 31%;
 }
 
+/* еще один костыль */
+
+.nav-list {
+  width:103%;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
 .nav-list > ul {
-  list-style: none;
   padding: 0;
 }
 
