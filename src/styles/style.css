@@ -1,6 +1,11 @@
 @import url("./colors.css");
 @import url("./fonts.css");
 
+:root {
+  --font-header: "Neucha", sans-serif;
+  --font-main: "OpenSans Regular", sans-serif;
+}
+
 * {
   box-sizing: border-box;
 
@@ -10,7 +15,7 @@
 body {
   color: var(--dark);
   font-size: 16px;
-  font-family: 'OpenSans Regular', sans-serif;
+  font-family: var(--font-main);
   line-height: 1.6em;
 }
 
@@ -20,7 +25,8 @@ h3,
 .h3 {
   margin: 0;
 
-  font-family: 'Neucha', sans-serif;
+  font-family: var(--font-header);
+  font-weight: 400;
   line-height: 1.2em;
 }
 
@@ -29,7 +35,6 @@ h1 {
 }
 
 h2 {
-  font-weight: normal;
   font-size: 60px;
 }
 
@@ -59,12 +64,21 @@ a {
 }
 
 /* -----------------------------Positions-------------------------------------- */
+
 .position-relative {
   position: relative;
 }
 
 .position-absolute {
   position: absolute;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-1rem {
+  padding: 1rem;
 }
 
 .pb-0 {
@@ -79,12 +93,40 @@ a {
   margin-top: 5%;
 }
 
+
 .mt-60 {
   margin-top: 60px;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-2rem {
+  margin-bottom: 1.85rem;
+}
+
 .mt-minus-100px {
   margin-top: -100px;
+}
+/* супер костыль, который надо будет обязательно переработать */
+.column > p,
+.column-section > p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.column > p:first-child,
+.column-section > p:first-child {
+  margin-top: 0;
+}
+
+.column > p:last-child,
+.column-section > p:first-child,
+.column-section > p:last-child {
+  margin-bottom: 0;
 }
 
 /* ----------------------------Flex-------------------------- */
@@ -98,7 +140,16 @@ a {
 }
 
 .flex-container > .column {
-  width: 49%;
+  flex-shrink: 0.3;
+  max-width: 49%;
+}
+
+.column-section {
+  width: 45%;
+}
+
+.column-img {
+  flex-basis: content;
 }
 
 .flex-center {
@@ -107,13 +158,16 @@ a {
   justify-content: center;
 }
 
-.flex-center * { /* костыль */
+.flex-center * {
   width: 100%;
-  padding: 1rem;
 }
 
 .nowrap {
   flex-wrap: nowrap;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .order-1 {
@@ -130,11 +184,19 @@ a {
   position: relative;
   z-index: 1;
 
-  margin-bottom: 20%;
+  margin-bottom: 18%;
 }
 
 .text-white {
   color: var(--white);
+}
+
+.primary-dark {
+  color: var(--primary-dark);
+}
+
+.primary-white {
+  color: var(--primary-white);
 }
 
 .text-yellow {
@@ -149,13 +211,14 @@ a {
   display: block;
 
   width: 100%;
+  font-weight: 700;
 
   margin-top: 100px;
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 5px 10px;
 
-  font-variant: small-caps;
-  line-height: 16.8px;
+  text-transform: uppercase;
+  line-height: 1.3rem;
 }
 
 .section-sub {
@@ -264,7 +327,7 @@ img {
 
 .img-header {
   position: absolute;
-  top: -55px;
+  top: -45px;
   right: -270px;
 
   height: 525px;
@@ -293,6 +356,8 @@ img {
 
   width: 70px;
   height: 50px;
+
+  border: none;
 }
 
 .btn-send::before {
@@ -316,16 +381,14 @@ img {
 
   max-width: 919px;
   padding: 0;
-
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 /* -----------------------------Navigation------------------------ */
 .nav-item {
   width: 350px;
-  height: 348px;
+  height: 340px;
 
-  margin: 1em;
+  margin: 0.8em;
 
   overflow: hidden;
 
@@ -337,7 +400,11 @@ img {
 }
 
 .flex-container > .nav-item {
-  width: 30%;
+  width: 31%;
+}
+
+.nav-list > ul {
+  padding: 0;
 }
 
 .nav-link {
@@ -347,7 +414,7 @@ img {
 
   padding: 24px;
 
-  background-color: var(--primary-white);
+  background-color: var(--light);
 }
 
 .nav-link:hover,
@@ -392,4 +459,28 @@ img {
 input[id="email"] {
   height: 50px;
   padding: 15px;
+
+  border: none;
+}
+
+/* ------------------------- Mobile ------------------------ */
+
+@media (max-width: 770px) {
+  section,
+  header,
+  footer {
+    padding: 100px 5%;
+  }
+
+  .flex-container > .column {
+    width: 100%;
+  }
+
+  .flex-container > .nav-item {
+    width: 100%;
+  }
+
+  .img-header {
+    display: none;
+  }
 }
