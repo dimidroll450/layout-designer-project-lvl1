@@ -487,13 +487,38 @@ input[id="email"] {
   font-size: 18px;
 }
 
-/* ------------------------- Mobile ------------------------ */
+/* ------------------------ Tablet ------------------------- */
 
-@media (max-width: 770px) {
+@media (max-width: 1110px) {
+  .flex-container {
+    justify-content: center;
+  }
+
+  .nav-list > .flex-container {
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+
+    margin: 0 auto;
+  }
+
+  .flex-container > .nav-item {
+    width: 40%;
+  }
+
+  .container,
+  .column-section {
+    width: 100%;
+  }
+
+  .nav-number {
+    margin-bottom: 30px;
+  }
+
   section,
-  header,
-  footer {
-    padding: 100px 5%;
+  header {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   h1,
@@ -502,8 +527,56 @@ input[id="email"] {
     text-align: center;
   }
 
-  h1 {
-    font-size: 3rem;
+  .order-2 {
+    order: 0;
+  }
+}
+
+/* ------------------------- Mobile ------------------------ */
+
+@media (max-width: 576px) {
+  section,
+  header {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  footer {
+    padding: 0 0 48px 0;
+  }
+
+  .p-2rem {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  h1,
+  .nav-header,
+  .nav-number {
+    font-size: 30px;
+  }
+
+  .nav-header-item {
+    height: 100px;
+  }
+
+  .header-title {
+    margin-bottom: 40px;
+  }
+
+  h2,
+  h3,
+  .h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  footer h3 {
+    margin-bottom: 20px;
+  }
+
+  .section-sub {
+    font-size: 12px;
   }
 
   .container,
@@ -516,11 +589,20 @@ input[id="email"] {
     min-width: 100%;
   }
 
+  .column-img {
+    width: 100%;
+  }
+
   .flex-container > .nav-item {
     width: 100%;
   }
 
   .img-header {
     display: none;
+  }
+
+  .divider {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
