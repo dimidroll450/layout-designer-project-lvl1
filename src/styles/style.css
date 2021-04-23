@@ -511,8 +511,13 @@ input[id="email"] {
     width: 100%;
   }
 
+  .column-section > h2 {
+    margin-top: 20px;
+  }
+
   .nav-number {
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 10px;
   }
 
   section,
@@ -525,6 +530,19 @@ input[id="email"] {
   h2,
   h3 {
     text-align: center;
+  }
+
+  h3 {
+    font-size: 27px;
+  }
+
+  .nav-header-item {
+   display: flex;
+   align-items: center;
+  }
+
+  .nav-header {
+    font-size: 37px;
   }
 
   .order-2 {
@@ -550,9 +568,11 @@ input[id="email"] {
     padding-left: 20px;
   }
 
-  h1,
-  .nav-header,
-  .nav-number {
+  h1 {
+    font-size: 40px;
+  }
+  
+  .nav-header {
     font-size: 30px;
   }
 
@@ -564,11 +584,18 @@ input[id="email"] {
     margin-bottom: 40px;
   }
 
-  h2,
+  h2 {
+    font-size: 27px;
+  }
+
   h3,
   .h3 {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 27px;
+  }
+
+  p {
+    margin-top: 1rem !important;
   }
 
   footer h3 {
@@ -604,5 +631,11 @@ input[id="email"] {
   .divider {
     margin-top: 30px;
     margin-bottom: 20px;
+  }
+
+  .contacts {
+    margin-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
