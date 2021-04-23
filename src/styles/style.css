@@ -511,13 +511,10 @@ input[id="email"] {
     width: 100%;
   }
 
-  .column-section > h2 {
-    margin-top: 20px;
-  }
-
   .nav-number {
-    font-size: 40px;
     margin-bottom: 10px;
+
+    font-size: 40px;
   }
 
   section,
@@ -536,9 +533,13 @@ input[id="email"] {
     font-size: 27px;
   }
 
+  .column-section > h2 {
+    margin-top: 20px;
+  }
+
   .nav-header-item {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
   }
 
   .nav-header {
@@ -571,7 +572,7 @@ input[id="email"] {
   h1 {
     font-size: 40px;
   }
-  
+
   .nav-header {
     font-size: 30px;
   }
